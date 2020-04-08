@@ -1,0 +1,171 @@
+body, html {
+  margin: 0px;
+  height: 100%;
+  color: black;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+  font-family: "Century Gothic", sans serif;
+}
+.header-bar{
+  margin: 25px 0 75px 0;
+  width: 200px;
+  height: 4px;
+  background: orange;
+  opacity: 0.7;
+}
+
+.divder-bar{
+  margin: 25px 0 50px 0;
+  width: 100px;
+  height: 4px;
+  background: green;
+  opacity: 0.7;
+}
+
+.product {
+  width: 175px;
+  height: 75px;
+}
+
+.mainText{
+  padding: 60px;
+  padding-top: 100px;
+  letter-spacing: 3px;
+}
+
+h3{
+  text-align: center;
+  font-weight: bold;
+  color: black;
+} 
+.discription{
+  margin: 30px;
+  margin-right: 250px;
+  margin-left: 250px;
+}
+.topnav {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  background-color: rgba(0,120,0,0.6);
+  color: white;
+  right: 0;
+  left: 0;
+  z-index:3;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.LogoImage {
+  float: left!important;
+  padding: 2px 14px!important;
+}
+
+.LogoImageActive {
+  float: left!important;
+  padding: 2px 14px!important;
+  height: 52px;
+  /*color: green!important;
+  background:white!important;*/
+}
+
+.ActivePage {
+  display: block;
+  color: green!important;
+  background:white!important;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+.topnav a:hover {
+  background-color: white;
+  color: orange;
+}
+
+
+.fa {
+  padding: 15px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  margin-left: 2px;
+}
+.fa:hover {
+    background-color: white;
+}
+.fa-google:hover{
+  color: #dd4b39;
+  background: white;
+  text-decoration: none;
+}
+.fa-facebook:hover{
+  color: #3B5998;
+  background: white;
+  text-decoration: none;
+}
+.fa-twitter:hover{
+  color: #55ACEE;
+  background: white;
+  text-decoration: none;
+}
+.footer{
+  background-color: rgba(0, 128, 0);
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+  bottom: 0px;
+  margin-bottom: 0px;
+}
+
+button {
+  background-color: green;
+  border: 1px solid green;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  border-radius: px;
+  padding: 5px 20px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+button:hover {
+  border: 1px solid orange;
+  color: orange;
+  background-color: white;
+}
+
+#LOGO {
+	width: 70%;
+	height: 70%;
+	background-image: url("Images/logo.png");
+}
+
+
+input[type=text], select, input[type=number] {
+width: 25%;
+padding: 12px 20px;
+margin: 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+.centerit {
+    position: fixed;
+    top: 25%;
+}
+

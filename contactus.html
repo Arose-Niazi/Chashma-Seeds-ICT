@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<HEAD>
+	<LINK rel="stylesheet" href="Awesome/css/all.css">
+	<LINK rel="stylesheet" href="AwesomeOld/css/font-awesome.min.css">
+	<LINK rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<LINK rel="stylesheet" href="CSS/theme.css">
+
+	<STYLE>
+		#map{
+			width:75%;
+			height: 400px;
+			background-color: grey;
+		}
+	</STYLE>
+	<SCRIPT>
+		var map;
+		function initMap() 
+		{
+			map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 17,
+				center: new google.maps.LatLng(32.338462,71.530670),
+				mapTypeId: google.maps.MapTypeId.HYBRID
+			});
+			var latLng = new google.maps.LatLng(32.338462,71.530670);
+			var marker = new google.maps.Marker({
+				position: latLng,
+				title:"Chashma Seeds Corporation",
+				map: map
+			});
+			marker.setMap(map);
+		}
+    </SCRIPT>
+	<SCRIPT async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA8_OwtySc2M_GEw4_ADwMp1vZd6uH6zA&callback=initMap"></SCRIPT>
+</HEAD>
+<BODY>
+	<DIV class="topnav" id="navbar">
+		<A href="#ContactUs" class="ActivePage"><i class="fas fa-user"></i> Contact Us</A>
+		<A href="FAQ.html"><i class="fas fa-question-circle"+></i> FAQ</A>
+		<A href="Orders.html"><i class="fas fa-shopping-cart"></i> Order Online</A>
+		<A href="Products.html"><i class="fab fa-product-hunt"></i> Products</A>
+		<A href="About.html" class="LogoImage"><IMG src="Images/logo-h.png"  width="70px" height="48px"/></A>
+	</DIV>
+	<DIV class="mainText">
+		<A name="#ContactUs"><H3> CONTACT US</H3></A>
+		<CENTER><DIV class="header-bar"></DIV>
+		<H5><FONT size="5">Send us mail</FONT></H5><BR>
+		<FORM name="form1" METHOD="get" ACTION="error.html">
+			Name(required):
+			</BR>
+			<INPUT TYPE="TEXT" NAME="first name" SIZE="30" MAXLENGTH="50"/>
+			</BR>
+			</BR>
+			Email adress(required):
+			</BR>
+			<INPUT TYPE="TEXT" NAME="email" SIZE="30" MAXLENGTH="50"/>
+			</BR>
+			</BR>
+			Contact No:
+			</BR>
+			<INPUT TYPE="TEXT" NAME="CONATCT" SIZE="30" MAX LENGTH="50"/>
+			</BR>
+			</BR>
+			Your message:
+			</BR>
+			<TEXTAREA COLS=50 ROWS=5 NAME="COMMENTS">
+			</TEXTAREA>
+			</BR>
+			</BR>
+			<BUTTON ONCLICK="alert('Thanks, Email sent!')">SUBMIT</BUTTON>
+		</FORM>	
+	</DIV>
+	<CENTER>
+		<P><FONT size="5"><B>Head Office Mianwali</FONT></B></P>  
+		<DIV id="map">
+	</DIV>
+	<BR>
+		<BR>
+	</CENTER>
+</BODY>	
+<FOOTER>
+	<DIV class="footer">
+		<A href="https://www.facebook.com/" class="fa fa-facebook"></A>
+		<A href="https://twitter.com/" class="fa fa-twitter"></A>
+		<A href="https://plus.google.com/discover" class="fa fa-google"></A>
+		<BR>
+		copyright@chashmaseedscorporation
+	</DIV>
+</FOOTER>
+<HTML>
